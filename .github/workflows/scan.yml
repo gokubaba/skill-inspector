@@ -1,0 +1,117 @@
+name: SkillSpector taraması
+
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: "Taranacak repo (ör. https://github.com/kepano/obsidian-skills)"
+        required: true
+        type: string
+      subdir:
+        description: "Repo içinde belirli bir klasör (boş = tüm repo)"
+        required: false
+        default: ""
+        type: string
+      recursive:
+        description: "İçindeki her SKILL.md klasörünü ayrı skill olarak tara"
+        required: false
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: skillspector-scan
+  cancel-in-progress: false
+
+env:
+  # SkillSpector sabit bir sürüme bağlı; güncellemek için bu satırı değiştir.
+  SKILLSPECTOR_REF: d7338f58200a9ae2a24810cee08911ab68b107a7
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Bu repoyu al
+        uses: actions/checkout@v4
+
+      - name: uv kur
+        uses: astral-sh/setup-uv@v6
+
+      - name: SkillSpector kur
+        run: |
+          uv tool install --python 3.12 "git+https://github.com/NVIDIA/SkillSpector.git@${SKILLSPECTOR_REF}"
+          skillspector --help > /dev/null
+
+      - name: Hedefi indir (hiçbir script çalıştırılmaz)
+        env:
+          TARGET: ${{ inputs.target }}
+          SUBDIR: ${{ inputs.subdir }}
+        run: |
+          set -euo pipefail
+          case "$TARGET" in
+            https://github.com/*) ;;
+            *) echo "Yalnızca https://github.com/... adresleri kabul edilir." >&2; exit 1 ;;
+          esac
+          case "$SUBDIR" in
+            *..*) echo "Klasör yolunda '..' kullanılamaz." >&2; exit 1 ;;
+          esac
+          WORK="$RUNNER_TEMP/target"
+          GIT_TERMINAL_PROMPT=0 git clone --depth 1 --no-recurse-submodules "$TARGET" "$WORK"
+          COMMIT=$(git -C "$WORK" rev-parse HEAD)
+          SCAN_DIR="$WORK"
+          if [ -n "$SUBDIR" ]; then SCAN_DIR="$WORK/$SUBDIR"; fi
+          [ -d "$SCAN_DIR" ] || { echo "Klasör bulunamadı: $SUBDIR" >&2; exit 1; }
+          NAME=$(echo "${TARGET#https://github.com/}${SUBDIR:+-$SUBDIR}" | tr '/ ' '--' | tr -cd 'A-Za-z0-9._-')
+          STAMP=$(date -u +%Y-%m-%d-%H%M)
+          {
+            echo "SCAN_DIR=$SCAN_DIR"
+            echo "COMMIT=$COMMIT"
+            echo "REPORT_BASE=reports/${NAME}-${STAMP}"
+          } >> "$GITHUB_ENV"
+
+      - name: Statik tarama (--no-llm)
+        env:
+          RECURSIVE: ${{ inputs.recursive }}
+        run: |
+          set -uo pipefail
+          FLAGS=(--no-llm)
+          if [ "$RECURSIVE" = "true" ]; then FLAGS+=(--recursive); fi
+          skillspector scan "$SCAN_DIR" "${FLAGS[@]}" --format json --output "${REPORT_BASE}.json"; rc1=$?
+          skillspector scan "$SCAN_DIR" "${FLAGS[@]}" --format markdown --output "${REPORT_BASE}.md"; rc2=$?
+          echo "SCAN_RC=$((rc1 > rc2 ? rc1 : rc2))" >> "$GITHUB_ENV"
+          ls -la reports
+
+      - name: Özet
+        if: always()
+        env:
+          TARGET: ${{ inputs.target }}
+          SUBDIR: ${{ inputs.subdir }}
+        run: |
+          {
+            echo "## SkillSpector: \`$TARGET\` ${SUBDIR:+(\`$SUBDIR\`)}"
+            echo "Commit: \`${COMMIT:-?}\` · Çıkış kodu: \`${SCAN_RC:-?}\`"
+            echo
+            [ -f "${REPORT_BASE:-x}.md" ] && cat "${REPORT_BASE}.md"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Raporu repoya kaydet
+        if: always()
+        run: |
+          [ -n "${REPORT_BASE:-}" ] || exit 0
+          git config user.name "skillspector-bot"
+          git config user.email "skillspector-bot@users.noreply.github.com"
+          git add reports/
+          git diff --cached --quiet && exit 0
+          git commit -m "Tarama raporu: ${REPORT_BASE#reports/} (hedef commit ${COMMIT:-?})"
+          git push
+
+      - name: Raporu yükle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: skillspector-report
+          path: reports/
+          if-no-files-found: ignore
