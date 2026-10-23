@@ -21,8 +21,9 @@ on:
 permissions:
   contents: write
 
+# Her hedef kendi grubunda: farklı repoların taramaları birbirini iptal etmez.
 concurrency:
-  group: skillspector-scan
+  group: skillspector-${{ inputs.target }}-${{ inputs.subdir }}
   cancel-in-progress: false
 
 env:
@@ -115,7 +116,12 @@ jobs:
           git add reports/
           git diff --cached --quiet && exit 0
           git commit -m "Tarama raporu: ${REPORT_BASE#reports/} (hedef commit ${COMMIT:-?})"
-          git push
+          # Aynı anda biten taramalar çakışmasın diye birkaç kez dene.
+          for i in 1 2 3 4 5; do
+            git pull --rebase -q origin main && git push && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
 
       - name: Raporu yükle
         if: always()
