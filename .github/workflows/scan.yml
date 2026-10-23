@@ -61,9 +61,15 @@ jobs:
           WORK="$RUNNER_TEMP/target"
           GIT_TERMINAL_PROMPT=0 git clone --depth 1 --no-recurse-submodules "$TARGET" "$WORK"
           COMMIT=$(git -C "$WORK" rev-parse HEAD)
+          # .git klasörü skill'in parçası değil; taramada yanlış alarm üretmesin.
+          rm -rf "$WORK/.git"
           SCAN_DIR="$WORK"
           if [ -n "$SUBDIR" ]; then SCAN_DIR="$WORK/$SUBDIR"; fi
           [ -d "$SCAN_DIR" ] || { echo "Klasör bulunamadı: $SUBDIR" >&2; exit 1; }
+          # Kökte SKILL.md yoksa ve skills/ klasörü varsa, skill'leri oradan tara.
+          if [ -z "$SUBDIR" ] && [ ! -f "$SCAN_DIR/SKILL.md" ] && [ -d "$SCAN_DIR/skills" ]; then
+            SCAN_DIR="$SCAN_DIR/skills"
+          fi
           NAME=$(echo "${TARGET#https://github.com/}${SUBDIR:+-$SUBDIR}" | tr '/ ' '--' | tr -cd 'A-Za-z0-9._-')
           STAMP=$(date -u +%Y-%m-%d-%H%M)
           {
@@ -75,12 +81,15 @@ jobs:
       - name: Statik tarama (--no-llm)
         env:
           RECURSIVE: ${{ inputs.recursive }}
+        shell: bash
         run: |
-          set -uo pipefail
+          set -u
           FLAGS=(--no-llm)
           if [ "$RECURSIVE" = "true" ]; then FLAGS+=(--recursive); fi
-          skillspector scan "$SCAN_DIR" "${FLAGS[@]}" --format json --output "${REPORT_BASE}.json"; rc1=$?
-          skillspector scan "$SCAN_DIR" "${FLAGS[@]}" --format markdown --output "${REPORT_BASE}.md"; rc2=$?
+          rc1=0; rc2=0
+          # Yüksek riskli skill'de SkillSpector 0 dışı kodla çıkabilir; bu tarama hatası değil.
+          skillspector scan "$SCAN_DIR" "${FLAGS[@]}" --format json --output "${REPORT_BASE}.json" || rc1=$?
+          skillspector scan "$SCAN_DIR" "${FLAGS[@]}" --format markdown --output "${REPORT_BASE}.md" || rc2=$?
           echo "SCAN_RC=$((rc1 > rc2 ? rc1 : rc2))" >> "$GITHUB_ENV"
           ls -la reports
 
