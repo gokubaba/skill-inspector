@@ -8,7 +8,7 @@ on:
         required: true
         type: string
       subdir:
-        description: "Repo içinde belirli bir klasör (boş = tüm repo)"
+        description: "Repo içinde belirli bir klasör ya da tek dosya (boş = tüm repo)"
         required: false
         default: ""
         type: string
@@ -33,7 +33,7 @@ env:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     steps:
       - name: Bu repoyu al
         uses: actions/checkout@v4
@@ -66,7 +66,7 @@ jobs:
           rm -rf "$WORK/.git"
           SCAN_DIR="$WORK"
           if [ -n "$SUBDIR" ]; then SCAN_DIR="$WORK/$SUBDIR"; fi
-          [ -d "$SCAN_DIR" ] || { echo "Klasör bulunamadı: $SUBDIR" >&2; exit 1; }
+          [ -e "$SCAN_DIR" ] || { echo "Klasör/dosya bulunamadı: $SUBDIR" >&2; exit 1; }
           # Kökte SKILL.md yoksa ve skills/ klasörü varsa, skill'leri oradan tara.
           if [ -z "$SUBDIR" ] && [ ! -f "$SCAN_DIR/SKILL.md" ] && [ -d "$SCAN_DIR/skills" ]; then
             SCAN_DIR="$SCAN_DIR/skills"
