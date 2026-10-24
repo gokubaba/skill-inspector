@@ -1,0 +1,1272 @@
+{
+  "skill": {
+    "name": "unknown",
+    "source": "/home/runner/work/_temp/target/c-level-agents",
+    "scanned_at": "2026-10-24T04:14:06.090017+00:00"
+  },
+  "risk_assessment": {
+    "score": 14,
+    "severity": "LOW",
+    "recommendation": "SAFE",
+    "max_issue_severity": "MEDIUM"
+  },
+  "components": [
+    {
+      "path": ".claude-plugin/plugin.json",
+      "type": "json",
+      "lines": 15,
+      "executable": false,
+      "size_bytes": 975,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "README.md",
+      "type": "markdown",
+      "lines": 92,
+      "executable": false,
+      "size_bytes": 5572,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "agents/cs-caio-advisor.md",
+      "type": "markdown",
+      "lines": 176,
+      "executable": false,
+      "size_bytes": 10919,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "agents/cs-cco-advisor.md",
+      "type": "markdown",
+      "lines": 174,
+      "executable": false,
+      "size_bytes": 10565,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "agents/cs-cdo-advisor.md",
+      "type": "markdown",
+      "lines": 162,
+      "executable": false,
+      "size_bytes": 9160,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "agents/cs-cfo-advisor.md",
+      "type": "markdown",
+      "lines": 129,
+      "executable": false,
+      "size_bytes": 5962,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "agents/cs-chief-of-staff.md",
+      "type": "markdown",
+      "lines": 132,
+      "executable": false,
+      "size_bytes": 5869,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "agents/cs-chro-advisor.md",
+      "type": "markdown",
+      "lines": 119,
+      "executable": false,
+      "size_bytes": 5009,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "agents/cs-ciso-advisor.md",
+      "type": "markdown",
+      "lines": 124,
+      "executable": false,
+      "size_bytes": 5185,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "agents/cs-cmo-advisor.md",
+      "type": "markdown",
+      "lines": 123,
+      "executable": false,
+      "size_bytes": 5148,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "agents/cs-coo-advisor.md",
+      "type": "markdown",
+      "lines": 124,
+      "executable": false,
+      "size_bytes": 5094,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "agents/cs-cpo-advisor.md",
+      "type": "markdown",
+      "lines": 123,
+      "executable": false,
+      "size_bytes": 5106,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "agents/cs-cro-advisor.md",
+      "type": "markdown",
+      "lines": 120,
+      "executable": false,
+      "size_bytes": 4923,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "agents/cs-general-counsel-advisor.md",
+      "type": "markdown",
+      "lines": 167,
+      "executable": false,
+      "size_bytes": 9374,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "agents/cs-vpe-advisor.md",
+      "type": "markdown",
+      "lines": 162,
+      "executable": false,
+      "size_bytes": 9504,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/llm-wiki-bridge.md",
+      "type": "markdown",
+      "lines": 95,
+      "executable": false,
+      "size_bytes": 3835,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "references/persona-voices.md",
+      "type": "markdown",
+      "lines": 116,
+      "executable": false,
+      "size_bytes": 8755,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/boardroom/SKILL.md",
+      "type": "markdown",
+      "lines": 134,
+      "executable": false,
+      "size_bytes": 4934,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/brief/SKILL.md",
+      "type": "markdown",
+      "lines": 118,
+      "executable": false,
+      "size_bytes": 4115,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/c-level-agents/SKILL.md",
+      "type": "markdown",
+      "lines": 119,
+      "executable": false,
+      "size_bytes": 5567,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/caio-review/SKILL.md",
+      "type": "markdown",
+      "lines": 140,
+      "executable": false,
+      "size_bytes": 6192,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/cco-review/SKILL.md",
+      "type": "markdown",
+      "lines": 130,
+      "executable": false,
+      "size_bytes": 5389,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/cdo-review/SKILL.md",
+      "type": "markdown",
+      "lines": 126,
+      "executable": false,
+      "size_bytes": 5328,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/cfo-review/SKILL.md",
+      "type": "markdown",
+      "lines": 105,
+      "executable": false,
+      "size_bytes": 3441,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/ciso-review/SKILL.md",
+      "type": "markdown",
+      "lines": 113,
+      "executable": false,
+      "size_bytes": 3381,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/cmo-review/SKILL.md",
+      "type": "markdown",
+      "lines": 101,
+      "executable": false,
+      "size_bytes": 3378,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/cpo-review/SKILL.md",
+      "type": "markdown",
+      "lines": 110,
+      "executable": false,
+      "size_bytes": 3310,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/cro-review/SKILL.md",
+      "type": "markdown",
+      "lines": 110,
+      "executable": false,
+      "size_bytes": 3241,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/cross-eval/SKILL.md",
+      "type": "markdown",
+      "lines": 115,
+      "executable": false,
+      "size_bytes": 4430,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/cto-review/SKILL.md",
+      "type": "markdown",
+      "lines": 117,
+      "executable": false,
+      "size_bytes": 3539,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/decide/SKILL.md",
+      "type": "markdown",
+      "lines": 104,
+      "executable": false,
+      "size_bytes": 3751,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/execute/SKILL.md",
+      "type": "markdown",
+      "lines": 99,
+      "executable": false,
+      "size_bytes": 3539,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/founder-mode/SKILL.md",
+      "type": "markdown",
+      "lines": 108,
+      "executable": false,
+      "size_bytes": 4811,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/freeze/SKILL.md",
+      "type": "markdown",
+      "lines": 101,
+      "executable": false,
+      "size_bytes": 3899,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/gc-review/SKILL.md",
+      "type": "markdown",
+      "lines": 132,
+      "executable": false,
+      "size_bytes": 4781,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/office-hours/SKILL.md",
+      "type": "markdown",
+      "lines": 114,
+      "executable": false,
+      "size_bytes": 3900,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/onboard/SKILL.md",
+      "type": "markdown",
+      "lines": 126,
+      "executable": false,
+      "size_bytes": 5201,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/post-mortem/SKILL.md",
+      "type": "markdown",
+      "lines": 115,
+      "executable": false,
+      "size_bytes": 4130,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    },
+    {
+      "path": "skills/vpe-review/SKILL.md",
+      "type": "markdown",
+      "lines": 129,
+      "executable": false,
+      "size_bytes": 4963,
+      "source_url": null,
+      "source_identity": null,
+      "source_digest": null
+    }
+  ],
+  "structured_summaries": [],
+  "issues": [
+    {
+      "id": "AS3",
+      "finding_id": "finding-8caa0dfbadfa41dca2882f7c2dd4e702",
+      "category": "Agent Snooping",
+      "pattern": "Skill Enumeration",
+      "severity": "MEDIUM",
+      "confidence": 0.8,
+      "location": {
+        "file": "agents/cs-caio-advisor.md",
+        "start_line": 170,
+        "end_line": null,
+        "start_column": 54
+      },
+      "finding": "skills/caio-review/SKILL.md",
+      "explanation": "Skill enumerates or reads other installed skills. Access to other skills' SKILL.md files or the skills directory reveals prompt instructions, capabilities, and secrets that should be invisible to peer skills.",
+      "remediation": "Remove all code or instructions that list or read other skills' files or directories. Skills should operate independently; cross-skill access is a privilege escalation.",
+      "code_snippet": "\n- Skill: [${CLAUDE_PLUGIN_ROOT}/vendor/c-level-advisor/chief-ai-officer-advisor/SKILL.md](${CLAUDE_PLUGIN_ROOT}/vendor/c-level-advisor/chief-ai-officer-advisor/SKILL.md)\n- Voice spec: [../references/persona-voices.md](../references/persona-voices.md)\n- Sibling command: [`/c-level-agents:caio-review`](../skills/caio-review/SKILL.md)\n\n---\n",
+      "intent": null,
+      "tags": [
+        "Agent Snooping"
+      ],
+      "evidence": {},
+      "match_fingerprint": "42297d5733671bae7979e9e4627935e2f87212c8ad9e4f25ace53cb7cde4da78",
+      "occurrences": [
+        {
+          "file": "agents/cs-caio-advisor.md",
+          "start_line": 170,
+          "end_line": null,
+          "start_column": 54
+        }
+      ]
+    },
+    {
+      "id": "AS3",
+      "finding_id": "finding-75e57c0c4a5949abb470d54d081361aa",
+      "category": "Agent Snooping",
+      "pattern": "Skill Enumeration",
+      "severity": "MEDIUM",
+      "confidence": 0.8,
+      "location": {
+        "file": "agents/cs-cco-advisor.md",
+        "start_line": 168,
+        "end_line": null,
+        "start_column": 53
+      },
+      "finding": "skills/cco-review/SKILL.md",
+      "explanation": "Skill enumerates or reads other installed skills. Access to other skills' SKILL.md files or the skills directory reveals prompt instructions, capabilities, and secrets that should be invisible to peer skills.",
+      "remediation": "Remove all code or instructions that list or read other skills' files or directories. Skills should operate independently; cross-skill access is a privilege escalation.",
+      "code_snippet": "\n- Skill: [${CLAUDE_PLUGIN_ROOT}/vendor/c-level-advisor/chief-customer-officer-advisor/SKILL.md](${CLAUDE_PLUGIN_ROOT}/vendor/c-level-advisor/chief-customer-officer-advisor/SKILL.md)\n- Voice spec: [../references/persona-voices.md](../references/persona-voices.md)\n- Sibling command: [`/c-level-agents:cco-review`](../skills/cco-review/SKILL.md)\n\n---\n",
+      "intent": null,
+      "tags": [
+        "Agent Snooping"
+      ],
+      "evidence": {},
+      "match_fingerprint": "c44193e536600f80ecd61db1ca97d81d53bf0a5cc63fee46124437ca96f67748",
+      "occurrences": [
+        {
+          "file": "agents/cs-cco-advisor.md",
+          "start_line": 168,
+          "end_line": null,
+          "start_column": 53
+        }
+      ]
+    },
+    {
+      "id": "AS3",
+      "finding_id": "finding-ac27307b14e544b08a492ed66460e009",
+      "category": "Agent Snooping",
+      "pattern": "Skill Enumeration",
+      "severity": "MEDIUM",
+      "confidence": 0.8,
+      "location": {
+        "file": "agents/cs-cdo-advisor.md",
+        "start_line": 157,
+        "end_line": null,
+        "start_column": 53
+      },
+      "finding": "skills/cdo-review/SKILL.md",
+      "explanation": "Skill enumerates or reads other installed skills. Access to other skills' SKILL.md files or the skills directory reveals prompt instructions, capabilities, and secrets that should be invisible to peer skills.",
+      "remediation": "Remove all code or instructions that list or read other skills' files or directories. Skills should operate independently; cross-skill access is a privilege escalation.",
+      "code_snippet": "\n- Skill: [${CLAUDE_PLUGIN_ROOT}/vendor/c-level-advisor/chief-data-officer-advisor/SKILL.md](${CLAUDE_PLUGIN_ROOT}/vendor/c-level-advisor/chief-data-officer-advisor/SKILL.md)\n- Voice spec: [../references/persona-voices.md](../references/persona-voices.md)\n- Sibling command: [`/c-level-agents:cdo-review`](../skills/cdo-review/SKILL.md)\n\n---\n",
+      "intent": null,
+      "tags": [
+        "Agent Snooping"
+      ],
+      "evidence": {},
+      "match_fingerprint": "76be624fd2b4627dea1cff69d4a98b0800323f650482ba0a41839f7be3ce8a76",
+      "occurrences": [
+        {
+          "file": "agents/cs-cdo-advisor.md",
+          "start_line": 157,
+          "end_line": null,
+          "start_column": 53
+        }
+      ]
+    },
+    {
+      "id": "AS3",
+      "finding_id": "finding-c28fce5a55f949db97c23bc4247dd33c",
+      "category": "Agent Snooping",
+      "pattern": "Skill Enumeration",
+      "severity": "MEDIUM",
+      "confidence": 0.8,
+      "location": {
+        "file": "agents/cs-general-counsel-advisor.md",
+        "start_line": 161,
+        "end_line": null,
+        "start_column": 52
+      },
+      "finding": "skills/gc-review/SKILL.md",
+      "explanation": "Skill enumerates or reads other installed skills. Access to other skills' SKILL.md files or the skills directory reveals prompt instructions, capabilities, and secrets that should be invisible to peer skills.",
+      "remediation": "Remove all code or instructions that list or read other skills' files or directories. Skills should operate independently; cross-skill access is a privilege escalation.",
+      "code_snippet": "\n- Skill: [${CLAUDE_PLUGIN_ROOT}/vendor/c-level-advisor/general-counsel-advisor/SKILL.md](${CLAUDE_PLUGIN_ROOT}/vendor/c-level-advisor/general-counsel-advisor/SKILL.md)\n- Voice spec: [../references/persona-voices.md](../references/persona-voices.md)\n- Sibling command: [`/c-level-agents:gc-review`](../skills/gc-review/SKILL.md)\n\n---\n",
+      "intent": null,
+      "tags": [
+        "Agent Snooping"
+      ],
+      "evidence": {},
+      "match_fingerprint": "76ccd52050cccacb305d024945e347a310d46e29c49f7406c7809f5fd0a0bbe9",
+      "occurrences": [
+        {
+          "file": "agents/cs-general-counsel-advisor.md",
+          "start_line": 161,
+          "end_line": null,
+          "start_column": 52
+        }
+      ]
+    },
+    {
+      "id": "AS3",
+      "finding_id": "finding-6e7fa4dae7d54ea194ae528e39095ee2",
+      "category": "Agent Snooping",
+      "pattern": "Skill Enumeration",
+      "severity": "MEDIUM",
+      "confidence": 0.8,
+      "location": {
+        "file": "agents/cs-vpe-advisor.md",
+        "start_line": 157,
+        "end_line": null,
+        "start_column": 53
+      },
+      "finding": "skills/vpe-review/SKILL.md",
+      "explanation": "Skill enumerates or reads other installed skills. Access to other skills' SKILL.md files or the skills directory reveals prompt instructions, capabilities, and secrets that should be invisible to peer skills.",
+      "remediation": "Remove all code or instructions that list or read other skills' files or directories. Skills should operate independently; cross-skill access is a privilege escalation.",
+      "code_snippet": "\n- Skill: [${CLAUDE_PLUGIN_ROOT}/vendor/c-level-advisor/vpe-advisor/SKILL.md](${CLAUDE_PLUGIN_ROOT}/vendor/c-level-advisor/vpe-advisor/SKILL.md)\n- Voice spec: [../references/persona-voices.md](../references/persona-voices.md)\n- Sibling command: [`/c-level-agents:vpe-review`](../skills/vpe-review/SKILL.md)\n\n---\n",
+      "intent": null,
+      "tags": [
+        "Agent Snooping"
+      ],
+      "evidence": {},
+      "match_fingerprint": "2a31091309e4d16566f07ad3efed93cd6e2ae3ebf1f49b8d23e2c26a10c36977",
+      "occurrences": [
+        {
+          "file": "agents/cs-vpe-advisor.md",
+          "start_line": 157,
+          "end_line": null,
+          "start_column": 53
+        }
+      ]
+    },
+    {
+      "id": "AS3",
+      "finding_id": "finding-7437915da1f84e4b9dcfc239659f763e",
+      "category": "Agent Snooping",
+      "pattern": "Skill Enumeration",
+      "severity": "MEDIUM",
+      "confidence": 0.8,
+      "location": {
+        "file": "skills/post-mortem/SKILL.md",
+        "start_line": 111,
+        "end_line": null,
+        "start_column": 72
+      },
+      "finding": "skills/postmortem/SKILL.md",
+      "explanation": "Skill enumerates or reads other installed skills. Access to other skills' SKILL.md files or the skills directory reveals prompt instructions, capabilities, and secrets that should be invisible to peer skills.",
+      "remediation": "Remove all code or instructions that list or read other skills' files or directories. Skills should operate independently; cross-skill access is a privilege escalation.",
+      "code_snippet": "\n- Skill: [`decision-logger`](${CLAUDE_PLUGIN_ROOT}/vendor/c-level-advisor/decision-logger/SKILL.md)\n- Agent: [`cs-chief-of-staff`](../../agents/cs-chief-of-staff.md)\n- Sibling: [`/em:postmortem`](../../../c-level-advisor/executive-mentor/skills/postmortem/SKILL.md) \u2014 adversarial single-decision post-mortem\n\n---\n",
+      "intent": null,
+      "tags": [
+        "Agent Snooping"
+      ],
+      "evidence": {},
+      "match_fingerprint": "0ea91e856f7a2f97b74b1de67dfca470f27d9686cd9eb0880e23cc3344a4e34e",
+      "occurrences": [
+        {
+          "file": "skills/post-mortem/SKILL.md",
+          "start_line": 111,
+          "end_line": null,
+          "start_column": 72
+        }
+      ]
+    }
+  ],
+  "suppressed_count": 0,
+  "suppressed": [],
+  "metadata": {
+    "has_executable_scripts": false,
+    "skillspector_version": "2.12.0",
+    "llm_requested": false,
+    "llm_available": false,
+    "meta_analysis_applied": false,
+    "inference_usage": [],
+    "llm_provenance": {
+      "schema_version": 1,
+      "provider": {
+        "configured_adapter": "unknown",
+        "resolved_adapter": "unknown",
+        "effective_adapter": "not_applicable",
+        "effective_adapters": [],
+        "service": "unknown",
+        "routing": {
+          "deployment_override": null,
+          "deployment_source": "unknown",
+          "api_version": null,
+          "api_version_source": "unknown"
+        }
+      },
+      "analyzers": [
+        {
+          "analyzer_id": "mcp_tool_poisoning",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_developer_intent",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_quality_policy",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "semantic_security_discovery",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "source": "package_vcs_metadata"
+            }
+          }
+        },
+        {
+          "analyzer_id": "meta_analyzer",
+          "model": "z-ai/glm-5.3",
+          "model_source": "resolved_configuration",
+          "analyzer_revision": {
+            "value": "2.12.0",
+            "source": "skillspector_package",
+            "source_revision": {
+              "value": "d7338f58200a9ae2a24810cee08911ab68b107a7",
+              "source": "package_vcs_metadata"
+            }
+          }
+        }
+      ],
+      "sampling": {
+        "temperature": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "seed": {
+          "requested": null,
+          "source": "unset",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        },
+        "reasoning_effort": {
+          "requested": null,
+          "source": "provider_default",
+          "forwarded_to_client": null,
+          "adapter_support": false,
+          "provider_support": "unknown"
+        }
+      },
+      "determinism": {
+        "classification": "not_applicable",
+        "control_status": "not_applied",
+        "provider_guarantee": false,
+        "reason": "LLM analysis was not executed for this scan."
+      }
+    },
+    "filtering_mode": "heuristic"
+  },
+  "execution_successful": true,
+  "analysis_completeness": {
+    "total_components": 39,
+    "scanned_components": 39,
+    "coverage_percent": 100.0,
+    "is_complete": true,
+    "status": "complete",
+    "execution_successful": true,
+    "fully_inspected_files": 39,
+    "partially_inspected_files": 0,
+    "entirely_uninspected_files": 0,
+    "ledger_exceptions": [],
+    "scope_exclusions": [
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/agent-protocol",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/board-meeting",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/cfo-advisor",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/change-management",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/chief-ai-officer-advisor",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/chief-customer-officer-advisor",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/chief-data-officer-advisor",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/chief-of-staff",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/chro-advisor",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/ciso-advisor",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/cmo-advisor",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/company-os",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/context-engine",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/coo-advisor",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/cpo-advisor",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/cro-advisor",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/cs-onboard",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/cto-advisor",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/decision-logger",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/general-counsel-advisor",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/ma-playbook",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/strategic-alignment",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/c-level-advisor/vpe-advisor",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      },
+      {
+        "outcome": "out_of_scope",
+        "phase": "discovery",
+        "reason_code": "not_regular_file",
+        "message": "Inventoried path is no longer a regular file.",
+        "path": "vendor/product-team/product-manager-toolkit",
+        "start_line": null,
+        "end_line": null,
+        "fatal": false
+      }
+    ],
+    "analyzer_statuses": [
+      {
+        "analyzer_id": "artifact_integrity",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "behavioral_ast",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "behavioral_taint_tracking",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "bundled_execution_surface",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "no_applicable_files",
+        "message": "No files matched this analyzer's applicability contract."
+      },
+      {
+        "analyzer_id": "mcp_least_privilege",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "manifest_absent",
+        "message": "No compatible manifest was present for this analyzer."
+      },
+      {
+        "analyzer_id": "mcp_rug_pull",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "mcp_tool_poisoning",
+        "status": "not_applicable",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "manifest_absent",
+        "message": "No compatible manifest was present for this analyzer."
+      },
+      {
+        "analyzer_id": "meta_analyzer",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_developer_intent",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_quality_policy",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "semantic_security_discovery",
+        "status": "disabled",
+        "planned_work": 0,
+        "completed": 0,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0,
+        "reason_code": "disabled_by_configuration",
+        "message": "Analyzer was disabled by the requested configuration."
+      },
+      {
+        "analyzer_id": "static_patterns_agent_snooping",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_anti_refusal",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_data_exfiltration",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_deserialization",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_excessive_agency",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_harmful_content",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_memory_poisoning",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_output_handling",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_privilege_escalation",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_prompt_injection",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_rogue_agent",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_ssrf",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_supply_chain",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_system_prompt_leakage",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_patterns_tool_misuse",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      },
+      {
+        "analyzer_id": "static_yara",
+        "status": "completed",
+        "planned_work": 39,
+        "completed": 39,
+        "partial": 0,
+        "skipped": 0,
+        "failed": 0,
+        "unaccounted": 0
+      }
+    ],
+    "references": [],
+    "limitations": [],
+    "findings_before_filtering": 6,
+    "findings_after_filtering": 6
+  }
+}
