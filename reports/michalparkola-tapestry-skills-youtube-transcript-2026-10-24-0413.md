@@ -1,0 +1,154 @@
+# SkillSpector Security Report
+
+**Skill:** youtube\-transcript  
+**Source:** `/home/runner/work/_temp/target/youtube-transcript`  
+**Scanned:** 2026-10-24 04:13:58 UTC  
+
+## Risk Assessment
+
+| Metric | Value |
+|--------|-------|
+| Score | 59/100 |
+| Severity | HIGH |
+| Recommendation | DO NOT INSTALL |
+
+## Components (1)
+
+| File | Type | Lines | Executable |
+|------|------|-------|------------|
+| `SKILL.md` | markdown | 415 | No |
+
+## Issues (7)
+
+### 🔴 HIGH: TM2
+
+**Location:** `SKILL.md:50`  
+**Confidence:** 75%  
+
+**Message:** Chaining Abuse
+
+**Remediation:** Limit tool chaining depth and validate the output of each tool before passing it to the next\. Require explicit user approval for multi\-step chains\.
+
+---
+
+### 🔴 HIGH: TM2
+
+**Location:** `SKILL.md:255`  
+**Confidence:** 75%  
+
+**Message:** Chaining Abuse
+
+**Remediation:** Limit tool chaining depth and validate the output of each tool before passing it to the next\. Require explicit user approval for multi\-step chains\.
+
+---
+
+### 🔴 HIGH: TM1
+
+**Location:** `SKILL.md:401`  
+**Confidence:** 75%  
+
+**Message:** Tool Parameter Abuse
+
+**Remediation:** Validate all tool parameters against an allowlist\. Reject dangerous parameter values \(shell=True, \-\-force, \-rf /\) and use safe defaults\.
+
+---
+
+### 🟡 MEDIUM: PE2
+
+**Location:** `SKILL.md:50`  
+**Confidence:** 70%  
+
+**Message:** Sudo/Root Execution
+
+**Remediation:** Avoid sudo/root unless strictly required\. Prefer least\-privilege patterns\. If elevation is needed, document the justification and scope\.
+
+---
+
+### 🟡 MEDIUM: PE2
+
+**Location:** `SKILL.md:50`  
+**Confidence:** 70%  
+
+**Message:** Sudo/Root Execution
+
+**Remediation:** Avoid sudo/root unless strictly required\. Prefer least\-privilege patterns\. If elevation is needed, document the justification and scope\.
+
+---
+
+### 🟡 MEDIUM: PE2
+
+**Location:** `SKILL.md:255`  
+**Confidence:** 70%  
+
+**Message:** Sudo/Root Execution
+
+**Remediation:** Avoid sudo/root unless strictly required\. Prefer least\-privilege patterns\. If elevation is needed, document the justification and scope\.
+
+---
+
+### 🟡 MEDIUM: PE2
+
+**Location:** `SKILL.md:255`  
+**Confidence:** 70%  
+
+**Message:** Sudo/Root Execution
+
+**Remediation:** Avoid sudo/root unless strictly required\. Prefer least\-privilege patterns\. If elevation is needed, document the justification and scope\.
+
+---
+
+## Inspection Completeness
+
+| Metric | Value |
+|--------|-------|
+| Execution | successful |
+| Status | partial |
+| Coverage | 100\.0% |
+| Fully inspected | 1 |
+| Partially inspected | 0 |
+| Entirely uninspected | 0 |
+
+### Ledger Exceptions
+
+| Reason / Status | Location | Details |
+|-----------------|----------|---------|
+| reference\_missing | `SKILL.md:183-183` | A local path\-like reference does not match any bundled artifact, such as a file the skill writes at runtime\. |
+| reference\_missing | `SKILL.md:233-233` | A local path\-like reference does not match any bundled artifact, such as a file the skill writes at runtime\. |
+
+### Analyzer Statuses
+
+| Reason / Status | Location | Details |
+|-----------------|----------|---------|
+| completed | `artifact_integrity` |  |
+| no\_applicable\_files | `behavioral_ast` | No files matched this analyzer's applicability contract\. |
+| no\_applicable\_files | `behavioral_taint_tracking` | No files matched this analyzer's applicability contract\. |
+| no\_applicable\_files | `bundled_execution_surface` | No files matched this analyzer's applicability contract\. |
+| no\_applicable\_files | `mcp_least_privilege` | No files matched this analyzer's applicability contract\. |
+| completed | `mcp_rug_pull` |  |
+| completed | `mcp_tool_poisoning` |  |
+| disabled\_by\_configuration | `meta_analyzer` | Analyzer was disabled by the requested configuration\. |
+| disabled\_by\_configuration | `semantic_developer_intent` | Analyzer was disabled by the requested configuration\. |
+| disabled\_by\_configuration | `semantic_quality_policy` | Analyzer was disabled by the requested configuration\. |
+| disabled\_by\_configuration | `semantic_security_discovery` | Analyzer was disabled by the requested configuration\. |
+| completed | `static_patterns_agent_snooping` |  |
+| completed | `static_patterns_anti_refusal` |  |
+| completed | `static_patterns_data_exfiltration` |  |
+| completed | `static_patterns_deserialization` |  |
+| completed | `static_patterns_excessive_agency` |  |
+| completed | `static_patterns_harmful_content` |  |
+| completed | `static_patterns_memory_poisoning` |  |
+| completed | `static_patterns_output_handling` |  |
+| completed | `static_patterns_privilege_escalation` |  |
+| completed | `static_patterns_prompt_injection` |  |
+| completed | `static_patterns_rogue_agent` |  |
+| completed | `static_patterns_ssrf` |  |
+| completed | `static_patterns_supply_chain` |  |
+| completed | `static_patterns_system_prompt_leakage` |  |
+| completed | `static_patterns_tool_misuse` |  |
+| completed | `static_yara` |  |
+
+## Metadata
+
+- **Executable Scripts:** No
+
+*Generated by SkillSpector v2.12.0*
